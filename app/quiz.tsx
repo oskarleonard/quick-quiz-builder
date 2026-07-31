@@ -85,7 +85,7 @@ export default function Quiz() {
             Grattis på 65-årsdagen!
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-zinc-600">
-            Innan du får din present väntar ett litet quiz om Málaga. Fem
+            Innan du får din present väntar ett litet quiz om Málaga. Sju
             frågor&nbsp;– men svarar du fel på någon får du börja om från
             början. Lycka till!
           </p>

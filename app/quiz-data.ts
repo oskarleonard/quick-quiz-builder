@@ -1,8 +1,13 @@
 import type { StaticImageData } from "next/image";
-// malaga.jpeg: Wikimedia Commons "Da Gibralfaro (cropped).jpg" by Kiban, CC BY-SA 3.0
-// espetos.jpeg: Wikimedia Commons "Espetos de sardinas (1435081938).jpg", CC BY 2.0
+// Wikimedia Commons credits:
+// malaga.jpeg: "Da Gibralfaro (cropped).jpg" by Kiban, CC BY-SA 3.0
+// tapas.jpeg: "Madrid-Plaza Mayor-Tapas bar.jpg", CC BY 2.0
+// oel.jpeg: "Boquerones y cañas en Sevilla.jpg", CC BY 2.0 (cropped)
+// pimpi.jpeg: "El Pimpi Málaga 3.jpg", CC BY-SA 2.0
 import malaga from "./images/malaga.jpeg";
-import espetos from "./images/espetos.jpeg";
+import tapas from "./images/tapas.jpeg";
+import oel from "./images/oel.jpeg";
+import pimpi from "./images/pimpi.jpeg";
 import padron from "./images/padron.jpeg";
 import vermut from "./images/vermut.jpeg";
 import cana from "./images/cana.jpeg";
@@ -20,6 +25,34 @@ export const PRIZE_IMAGE = vinprovning;
 
 export const QUESTIONS: Question[] = [
   {
+    question:
+      "Ordet tapas kommer från spanskans 'tapa' – och sägs komma från att barerna förr la något över vinglaset för att hålla flugorna borta. Vad betyder ordet?",
+    image: tapas,
+    imageAlt: "En bardisk full med olika tapasrätter",
+    options: [
+      "En liten tallrik",
+      "Ett lock",
+      "En smakbit",
+      "Ett mellanmål",
+      "En delad rätt",
+    ],
+    correctIndex: 1,
+  },
+  {
+    question:
+      "Vilket öl är Málagas stolthet, bryggt i staden sedan 1928 med sloganen 'Malagueña y exquisita'?",
+    image: oel,
+    imageAlt: "Två glas öl och en tapastallrik på ett bord utanför en spansk bar",
+    options: [
+      "Cruzcampo",
+      "Mahou",
+      "Estrella Galicia",
+      "Victoria",
+      "Alhambra",
+    ],
+    correctIndex: 3,
+  },
+  {
     question: "Vilken världsberömd konstnär föddes i Málaga år 1881?",
     image: malaga,
     imageAlt: "Panoramavy över Málaga med hamnen och katedralen",
@@ -34,17 +67,17 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "På stränderna i Málaga grillas dessa sardinspett över öppen eld, ofta i gamla fiskebåtar fyllda med sand – en riktig Málaga-specialitet. Vad kallas spetten?",
-    image: espetos,
-    imageAlt: "Sardiner på spett som grillas över glödande kol",
+      "Málagas mest berömda bar, El Pimpi, har en världskänd Hollywoodskådespelare – född i Málaga – som delägare. Vem?",
+    image: pimpi,
+    imageAlt: "Entrén till Bodega Bar El Pimpi i Málaga",
     options: [
-      "Pinchos",
-      "Banderillas",
-      "Montaditos",
-      "Espetos",
-      "Brochetas",
+      "Javier Bardem",
+      "Pedro Almodóvar",
+      "Penélope Cruz",
+      "Enrique Iglesias",
+      "Antonio Banderas",
     ],
-    correctIndex: 3,
+    correctIndex: 4,
   },
   {
     question:

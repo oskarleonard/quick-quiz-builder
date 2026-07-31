@@ -6,7 +6,9 @@ const BASE =
   "https://raw.githubusercontent.com/oskarleonard/quick-quiz-builder/quiz/app/images/";
 const FILES = [
   "malaga.jpeg",
-  "espetos.jpeg",
+  "tapas.jpeg",
+  "oel.jpeg",
+  "pimpi.jpeg",
   "padron.jpeg",
   "vermut.jpeg",
   "cana.jpeg",
