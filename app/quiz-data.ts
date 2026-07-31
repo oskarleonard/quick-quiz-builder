@@ -3,11 +3,13 @@ import type { StaticImageData } from "next/image";
 // malaga.jpeg: "Da Gibralfaro (cropped).jpg" by Kiban, CC BY-SA 3.0
 // tapas.jpeg: "Madrid-Plaza Mayor-Tapas bar.jpg", CC BY 2.0
 // oel.jpeg: "Boquerones y cañas en Sevilla.jpg", CC BY 2.0 (cropped)
-// pimpi.jpeg: "El Pimpi Málaga 3.jpg", CC BY-SA 2.0
+// elpimpi.jpeg: "El Pimpi Málaga 3.jpg", CC BY-SA 2.0 (cropped)
+// vin.jpeg: "Interior bodega Málaga.jpg" by Feranza, CC BY-SA 4.0 (cropped)
 import malaga from "./images/malaga.jpeg";
 import tapas from "./images/tapas.jpeg";
 import oel from "./images/oel.jpeg";
-import pimpi from "./images/pimpi.jpeg";
+import pimpi from "./images/elpimpi.jpeg";
+import vin from "./images/vin.jpeg";
 import padron from "./images/padron.jpeg";
 import vermut from "./images/vermut.jpeg";
 import cana from "./images/cana.jpeg";
@@ -114,5 +116,19 @@ export const QUESTIONS: Question[] = [
       "Una caña, por favor",
     ],
     correctIndex: 4,
+  },
+  {
+    question:
+      "På 1700- och 1800-talen var vin från Málaga en exportsuccé i hela Europa och dracks till och med vid ryska hovet. Vilken typ av vin gjorde staden världsberömd?",
+    image: vin,
+    imageAlt: "Vinfat i en gammal bodega i Málaga",
+    options: [
+      "Kraftigt rött vin",
+      "Mousserande vin",
+      "Sött dessertvin",
+      "Torrt vitt vin",
+      "Rosévin",
+    ],
+    correctIndex: 2,
   },
 ];
