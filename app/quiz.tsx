@@ -102,8 +102,8 @@ export default function Quiz() {
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-zinc-600">
             Innan du får din present väntar ett litet quiz om Málaga.{" "}
-            {QUESTION_COUNT} frågor&nbsp;– men svarar du fel på någon får du
-            börja om från början. Lycka till!
+            {`${QUESTION_COUNT} frågor`}&nbsp;– men svarar du fel på någon får
+            du börja om från början. Lycka till!
           </p>
           <button
             onClick={() => setScreen("quiz")}
