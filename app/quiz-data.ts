@@ -1,4 +1,8 @@
 import type { StaticImageData } from "next/image";
+// malaga.jpeg: Wikimedia Commons "Da Gibralfaro (cropped).jpg" by Kiban, CC BY-SA 3.0
+// espetos.jpeg: Wikimedia Commons "Espetos de sardinas (1435081938).jpg", CC BY 2.0
+import malaga from "./images/malaga.jpeg";
+import espetos from "./images/espetos.jpeg";
 import padron from "./images/padron.jpeg";
 import vermut from "./images/vermut.jpeg";
 import cana from "./images/cana.jpeg";
@@ -17,6 +21,8 @@ export const PRIZE_IMAGE = vinprovning;
 export const QUESTIONS: Question[] = [
   {
     question: "Vilken världsberömd konstnär föddes i Málaga år 1881?",
+    image: malaga,
+    imageAlt: "Panoramavy över Málaga med hamnen och katedralen",
     options: [
       "Salvador Dalí",
       "Pablo Picasso",
@@ -28,13 +34,15 @@ export const QUESTIONS: Question[] = [
   },
   {
     question:
-      "Vad heter den moriska borgen som ligger på höjden mitt i centrala Málaga?",
+      "På stränderna i Málaga grillas dessa sardinspett över öppen eld, ofta i gamla fiskebåtar fyllda med sand – en riktig Málaga-specialitet. Vad kallas spetten?",
+    image: espetos,
+    imageAlt: "Sardiner på spett som grillas över glödande kol",
     options: [
-      "Alhambra",
-      "La Mezquita",
-      "El Escorial",
-      "Alcazaba",
-      "Sagrada Família",
+      "Pinchos",
+      "Banderillas",
+      "Montaditos",
+      "Espetos",
+      "Brochetas",
     ],
     correctIndex: 3,
   },

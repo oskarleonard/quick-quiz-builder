@@ -4,7 +4,14 @@ import { access, mkdir, writeFile } from "node:fs/promises";
 
 const BASE =
   "https://raw.githubusercontent.com/oskarleonard/quick-quiz-builder/quiz/app/images/";
-const FILES = ["padron.jpeg", "vermut.jpeg", "cana.jpeg", "vinprovning.jpeg"];
+const FILES = [
+  "malaga.jpeg",
+  "espetos.jpeg",
+  "padron.jpeg",
+  "vermut.jpeg",
+  "cana.jpeg",
+  "vinprovning.jpeg",
+];
 
 await mkdir("app/images", { recursive: true });
 
