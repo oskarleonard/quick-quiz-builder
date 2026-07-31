@@ -6,6 +6,22 @@ import { PRIZE_IMAGE, QUESTIONS } from "./quiz-data";
 
 type Screen = "start" | "quiz" | "wrong" | "won";
 
+const COUNT_WORDS = [
+  "Noll",
+  "En",
+  "Två",
+  "Tre",
+  "Fyra",
+  "Fem",
+  "Sex",
+  "Sju",
+  "Åtta",
+  "Nio",
+  "Tio",
+];
+const QUESTION_COUNT =
+  COUNT_WORDS[QUESTIONS.length] ?? String(QUESTIONS.length);
+
 const CONFETTI_COLORS = [
   "#f59e0b",
   "#ef4444",
@@ -85,9 +101,9 @@ export default function Quiz() {
             Grattis på 65-årsdagen!
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-zinc-600">
-            Innan du får din present väntar ett litet quiz om Málaga. Åtta
-            frågor&nbsp;– men svarar du fel på någon får du börja om från
-            början. Lycka till!
+            Innan du får din present väntar ett litet quiz om Málaga.{" "}
+            {QUESTION_COUNT} frågor&nbsp;– men svarar du fel på någon får du
+            börja om från början. Lycka till!
           </p>
           <button
             onClick={() => setScreen("quiz")}
