@@ -5,11 +5,15 @@ import type { StaticImageData } from "next/image";
 // oel.jpeg: "Boquerones y cañas en Sevilla.jpg", CC BY 2.0 (cropped)
 // elpimpi.jpeg: "El Pimpi Málaga 3.jpg", CC BY-SA 2.0 (cropped)
 // vin.jpeg: "Interior bodega Málaga.jpg" by Feranza, CC BY-SA 4.0 (cropped)
+// strand.jpeg: "Playa de la Malagueta ... DD 69.jpg" by Diego Delso, CC BY-SA 4.0
+// teater.jpeg: "Teatro romano ... DD 11.jpg" by Diego Delso, CC BY-SA 4.0
 import malaga from "./images/malaga.jpeg";
 import tapas from "./images/tapas.jpeg";
 import oel from "./images/oel.jpeg";
 import pimpi from "./images/elpimpi.jpeg";
 import vin from "./images/vin.jpeg";
+import strand from "./images/strand.jpeg";
+import teater from "./images/teater.jpeg";
 import padron from "./images/padron.jpeg";
 import vermut from "./images/vermut.jpeg";
 import cana from "./images/cana.jpeg";
@@ -129,6 +133,28 @@ export const QUESTIONS: Question[] = [
       "Torrt vitt vin",
       "Rosévin",
     ],
+    correctIndex: 2,
+  },
+  {
+    question:
+      "Louise älskar sol och värme, och i Málaga finns det gott om den varan. Hur många soldagar har Málaga på ett år?",
+    image: strand,
+    imageAlt: "Solstolar och parasoll på Malagueta-stranden i Málaga",
+    options: [
+      "Cirka 150",
+      "Cirka 200",
+      "Cirka 250",
+      "Cirka 300",
+      "Alla 365",
+    ],
+    correctIndex: 3,
+  },
+  {
+    question:
+      "Det Louise gillar mest med Málaga är mixen av storstad och strandort. Men staden är också en av Europas äldsta – fenicierna grundade den under namnet Malaka, troligen efter deras ord för salt, eftersom de saltade fisk här. Ungefär när grundades Málaga? (Stockholm grundades 1252 e.Kr.)",
+    image: teater,
+    imageAlt: "Den romerska teatern i Málaga med Alcazaban ovanför",
+    options: ["200 e.Kr.", "50 f.Kr.", "770 f.Kr.", "1500 f.Kr."],
     correctIndex: 2,
   },
 ];

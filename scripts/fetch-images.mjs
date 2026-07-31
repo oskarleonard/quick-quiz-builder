@@ -10,6 +10,8 @@ const FILES = [
   "oel.jpeg",
   "elpimpi.jpeg",
   "vin.jpeg",
+  "strand.jpeg",
+  "teater.jpeg",
   "padron.jpeg",
   "vermut.jpeg",
   "cana.jpeg",
