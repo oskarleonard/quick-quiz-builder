@@ -1,0 +1,160 @@
+import type { StaticImageData } from "next/image";
+// Wikimedia Commons credits:
+// malaga.jpeg: "Da Gibralfaro (cropped).jpg" by Kiban, CC BY-SA 3.0
+// tapas.jpeg: "Madrid-Plaza Mayor-Tapas bar.jpg", CC BY 2.0
+// oel.jpeg: "Boquerones y cañas en Sevilla.jpg", CC BY 2.0 (cropped)
+// elpimpi.jpeg: "El Pimpi Málaga 3.jpg", CC BY-SA 2.0 (cropped)
+// vin.jpeg: "Interior bodega Málaga.jpg" by Feranza, CC BY-SA 4.0 (cropped)
+// strand.jpeg: "Playa de la Malagueta ... DD 69.jpg" by Diego Delso, CC BY-SA 4.0
+// teater.jpeg: "Teatro romano ... DD 11.jpg" by Diego Delso, CC BY-SA 4.0
+import malaga from "./images/malaga.jpeg";
+import tapas from "./images/tapas.jpeg";
+import oel from "./images/oel.jpeg";
+import pimpi from "./images/elpimpi.jpeg";
+import vin from "./images/vin.jpeg";
+import strand from "./images/strand.jpeg";
+import teater from "./images/teater.jpeg";
+import padron from "./images/padron.jpeg";
+import vermut from "./images/vermut.jpeg";
+import cana from "./images/cana.jpeg";
+import vinprovning from "./images/vinprovning.jpeg";
+
+export type Question = {
+  question: string;
+  image?: StaticImageData;
+  imageAlt?: string;
+  options: string[];
+  correctIndex: number;
+};
+
+export const PRIZE_IMAGE = vinprovning;
+
+export const QUESTIONS: Question[] = [
+  {
+    question:
+      "Ordet tapas kommer från spanskans 'tapa' – och sägs komma från att barerna förr la något över vinglaset för att hålla flugorna borta. Vad betyder ordet?",
+    image: tapas,
+    imageAlt: "En bardisk full med olika tapasrätter",
+    options: [
+      "En liten tallrik",
+      "Ett lock",
+      "En smakbit",
+      "Ett mellanmål",
+      "En delad rätt",
+    ],
+    correctIndex: 1,
+  },
+  {
+    question:
+      "Vilket öl är Málagas stolthet, bryggt i staden sedan 1928 med sloganen 'Malagueña y exquisita'?",
+    image: oel,
+    imageAlt: "Två glas öl och en tapastallrik på ett bord utanför en spansk bar",
+    options: [
+      "Cruzcampo",
+      "Mahou",
+      "Estrella Galicia",
+      "Victoria",
+      "Alhambra",
+    ],
+    correctIndex: 3,
+  },
+  {
+    question: "Vilken världsberömd konstnär föddes i Málaga år 1881?",
+    image: malaga,
+    imageAlt: "Panoramavy över Málaga med hamnen och katedralen",
+    options: [
+      "Salvador Dalí",
+      "Pablo Picasso",
+      "Joan Miró",
+      "Francisco Goya",
+      "Diego Velázquez",
+    ],
+    correctIndex: 1,
+  },
+  {
+    question:
+      "Málagas mest berömda bar, El Pimpi, har en världskänd Hollywoodskådespelare – född i Málaga – som delägare. Vem?",
+    image: pimpi,
+    imageAlt: "Entrén till Bodega Bar El Pimpi i Málaga",
+    options: [
+      "Javier Bardem",
+      "Pedro Almodóvar",
+      "Penélope Cruz",
+      "Enrique Iglesias",
+      "Antonio Banderas",
+    ],
+    correctIndex: 4,
+  },
+  {
+    question:
+      "Detta är Oskars favoritsnacks i Málaga, vad heter denna tapas?",
+    image: padron,
+    imageAlt: "En skål med gröna stekta paprikor med flingsalt",
+    options: [
+      "Patatas bravas",
+      "Gambas al ajillo",
+      "Pimientos de Padrón",
+      "Croquetas de espinacas",
+      "Aceitunas fritas",
+    ],
+    correctIndex: 2,
+  },
+  {
+    question:
+      "I södra Spanien är denna alkoholhaltiga dryck populär och är dessutom Oskars favorit att dricka när han snacksar på pimientos de padrón. Vad heter drycken?",
+    image: vermut,
+    imageAlt: "Ett glas med en mörk dryck, is och en citronskalsbit",
+    options: ["Sangría", "Vermut", "Tinto de verano", "Sherry", "Rioja"],
+    correctIndex: 1,
+  },
+  {
+    question:
+      "I Málaga är det populärt att köpa många små öl – de är ofta 200 ml stora och kostar 10–20 kr. Om du vill beställa en sån öl, hur säger du då på spanska?",
+    image: cana,
+    imageAlt: "En hand som håller ett litet ölglas",
+    options: [
+      "Una pinta, por favor",
+      "Una jarra grande, por favor",
+      "Un vaso de agua, por favor",
+      "Una copa de vino, por favor",
+      "Una caña, por favor",
+    ],
+    correctIndex: 4,
+  },
+  {
+    question:
+      "På 1700- och 1800-talen var vin från Málaga en exportsuccé i hela Europa och dracks till och med vid ryska hovet. Vilken typ av vin gjorde staden världsberömd?",
+    image: vin,
+    imageAlt: "Vinfat i en gammal bodega i Málaga",
+    options: [
+      "Kraftigt rött vin",
+      "Mousserande vin",
+      "Sött dessertvin",
+      "Torrt vitt vin",
+      "Rosévin",
+    ],
+    correctIndex: 2,
+  },
+  {
+    question:
+      "Louise älskar sol och värme, och i Málaga finns det gott om den varan. Hur många soldagar har Málaga på ett år?",
+    image: strand,
+    imageAlt: "Solstolar och parasoll på Malagueta-stranden i Málaga",
+    options: [
+      "Cirka 150",
+      "Cirka 200",
+      "Cirka 250",
+      "Cirka 300",
+      "Alla 365",
+    ],
+    correctIndex: 3,
+  },
+  {
+    question:
+      "Det Louise gillar mest med Málaga är mixen av storstad och strandort. Men staden är också en av Europas äldsta – fenicierna grundade den under namnet Malaka, troligen efter deras ord för salt, eftersom de saltade fisk här. Ungefär när grundades Málaga? (Stockholm grundades 1252 e.Kr.)",
+    image: teater,
+    imageAlt: "Den romerska teatern i Málaga med Alcazaban ovanför",
+    options: ["200 e.Kr.", "50 f.Kr.", "770 f.Kr.", "1500 f.Kr."],
+    correctIndex: 2,
+  },
+];
